@@ -9,10 +9,71 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Survey Form</title>
   </head>
-  <body>
-      <h1 id="title">This is a survey</h1>
+  <body class="background">
+    <div class="block-container">
+      <h1 id="title" class="">This is a survey</h1>
       <p id="description">This is the survey's description.</p>
+    </div>
+    <div class="block-container-traslucid">
+      <form id="survey-form" action="">
+        <div class="block-container-form">
+          <label id="name-label" for="name">Name</label>
+        </div>
+        <div class="block-container-form">
+          <input
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="block-container-form">
+          <label id="email-label" for="email">Email</label>
+        </div>
+        <div class="block-container-form">
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="block-container-form">
+          <label id="number-label" for="number">Age (18 to 99)</label>
+        </div>
+        <div class="block-container-form">
+          <input type="number" name="number" id="number" min="18" max="99" />
+        </div>
+        <div class="block-container-form">
+          <label for="">Which option best describes your current role?</label>
+        </div>
+        <div class="block-container-form">
+          <select name="" id="dropdown"></select>
+        </div>
+        <div class="block-container-form">
+          <label for="">Would you recommend freeCodeCamp to a friend?</label>
+        </div>
+        <div class="block-container-form">
+          <label for="">What is your favorite feature of freeCodeCamp?</label>
+        </div>
+        <div class="block-container-form">
+          <label for=""
+            >What would you like to see improved? (Check all that apply)</label
+          >
+        </div>
+        <div class="block-container-form">
+          <label for="">Any comments or suggestions?</label>
+        </div>
+        <div class="block-container-form">
+          <input class="btn btn-success" type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
