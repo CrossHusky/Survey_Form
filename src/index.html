@@ -14,28 +14,25 @@
   </head>
   <body class="background">
     <div class="block-container">
-      <h1 id="title" class="">This is a survey</h1>
-      <p id="description">This is the survey's description.</p>
+      <h1 id="title" class="">Behold the greatest mountains of the world!</h1>
+      <p id="description">This survey will help us know your opinion.</p>
     </div>
     <div class="block-container-traslucid">
       <form id="survey-form" action="">
         <div class="block-container-form">
-          <label id="name-label" for="name">Name</label>
-        </div>
-        <div class="block-container-form">
-          <input
+          <label id="name-label" for="name">Name</label
+          ><input
             class="input"
             type="text"
             name="name"
             id="name"
-            placeholder="Enter your name"
+            placeholder="Enter your name" required
           />
         </div>
+
         <div class="block-container-form">
-          <label id="email-label" for="email">Email</label>
-        </div>
-        <div class="block-container-form">
-          <input
+          <label id="email-label" for="email">Email</label
+          ><input
             class="input"
             type="email"
             name="email"
@@ -44,34 +41,125 @@
             required
           />
         </div>
+
         <div class="block-container-form">
           <label id="number-label" for="number">Age (18 to 99)</label>
+          <input
+            class="input"
+            type="number"
+            name="number"
+            id="number"
+            min="18"
+            max="99"
+            placeholder="18"
+          />
         </div>
+
         <div class="block-container-form">
-          <input type="number" name="number" id="number" min="18" max="99" />
+          <label for="">Which is the highest mountain?</label>
+          <select class="input" name="dropdown" id="dropdown">
+            <option value="none" disabled selected>Select an option...</option>
+            <option value="Sia Kangri">Sia Kangri</option>
+            <option value="K2">K2</option>
+            <option value="Mount Everest">Mount Everest</option>
+            <option value="Lupghar Sar">Lupghar Sar</option>
+          </select>
         </div>
+
         <div class="block-container-form">
-          <label for="">Which option best describes your current role?</label>
-        </div>
-        <div class="block-container-form">
-          <select name="" id="dropdown"></select>
-        </div>
-        <div class="block-container-form">
-          <label for="">Would you recommend freeCodeCamp to a friend?</label>
-        </div>
-        <div class="block-container-form">
-          <label for="">What is your favorite feature of freeCodeCamp?</label>
+          <label for="">Would you climb any of the mentioned mountains?</label>
+          <div>
+            <ul class="selection">
+              <li>
+                <input type="radio" name="option" id="yes" value="yes"/>
+                <label for="yes">Yes</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="maybe" value="maybe" />
+                <label for="yes">Maybe</label>
+              </li>
+              <li>
+                <input type="radio" name="option" id="no" value="no"/>
+                <label for="yes">No</label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="block-container-form">
           <label for=""
-            >What would you like to see improved? (Check all that apply)</label
+            >What mountains would you like to see included? (Check all that
+            apply)</label
           >
+          <div>
+            <ul class="selection">
+              <li>
+                <input
+                  type="checkbox"
+                  name="Lhotse"
+                  id="Lhotse"
+                  value="Lhotse"
+                />
+                <label for="Lhotse">Lhotse</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="Makalu"
+                  id="Makalu"
+                  value="Makalu"
+                />
+                <label for="Makalu">Makalu</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="Cho Oyu"
+                  id="Cho Oyu"
+                  value="Cho Oyu"
+                />
+                <label for="Cho Oyu">Cho Oyu</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="Manaslu"
+                  id="Manaslu"
+                  value="Manaslu"
+                />
+                <label for="Manaslu">Manaslu</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="Himalchuli"
+                  id="Himalchuli"
+                  value="Himalchuli"
+                />
+                <label for="Himalchuli">Himalchuli</label>
+              </li>
+              <li>
+                <input type="checkbox" name="K6" id="K6" value="K6" />
+                <label for="K6">K6</label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="block-container-form">
           <label for="">Any comments or suggestions?</label>
+          <textarea
+            class="input input-height"
+            name="textarea"
+            id="textarea"
+            placeholder="Enter your comment here..."
+          ></textarea>
         </div>
         <div class="block-container-form">
-          <input class="btn btn-success" type="submit" value="Submit" id="submit" />
+          <input
+            class="btn btn-success input"
+            type="submit"
+            value="Submit"
+            id="submit"
+          />
         </div>
       </form>
     </div>

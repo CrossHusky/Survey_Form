@@ -1,13 +1,13 @@
 .block-container {
   max-width: 50%;
-  margin: auto;
+  margin: 5% auto 5%;
   display: block;
   text-align: center;
 }
 
 .block-container-form {
   max-width: 90%;
-  margin: auto;
+  margin: 3% auto 0%;
   display: block;
   text-align: left;
 }
@@ -28,9 +28,19 @@
 }
 
 .background {
-  background-image: url("/media/background.jpg");
+  background-image: url("https://3.bp.blogspot.com/-0uTYbhRviZo/XFUltMXwpmI/AAAAAAAABz0/8qFN2fjMUBYCb8MOlLia1gRbRrrH9sNBQCKgBGAs/w0/mountain-purple-sky-nature-scenery-4-4K.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   text-shadow: 1px 1px #000000;
+}
+
+.selection {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.input-height{
+    height: 128px;
 }
